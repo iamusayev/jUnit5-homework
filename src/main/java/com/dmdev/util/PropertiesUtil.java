@@ -1,5 +1,6 @@
 package com.dmdev.util;
 
+import java.io.InputStream;
 import lombok.SneakyThrows;
 import lombok.experimental.UtilityClass;
 
@@ -16,7 +17,7 @@ public final class PropertiesUtil {
 
     @SneakyThrows
     private static void loadProperties() {
-        try (var inputStream = PropertiesUtil.class.getClassLoader().getResourceAsStream("application.properties")) {
+        try (InputStream inputStream = PropertiesUtil.class.getClassLoader().getResourceAsStream("application.properties")) {
             properties.load(inputStream);
         }
     }
