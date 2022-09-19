@@ -31,3 +31,4 @@ public class ConnectionManager {
                 PropertiesUtil.get(PASSWORD_KEY));
     }
 }
+

@@ -13,7 +13,6 @@ import static lombok.AccessLevel.PRIVATE;
 public class CreateUserMapper implements Mapper<CreateUserDto, User> {
 
     private static final CreateUserMapper INSTANCE = new CreateUserMapper();
-
     public static CreateUserMapper getInstance() {
         return INSTANCE;
     }

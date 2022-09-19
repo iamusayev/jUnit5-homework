@@ -9,7 +9,6 @@ import java.sql.Statement;
 import java.time.LocalDate;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.BeforeEach;
-
 public abstract class IntegrationTestBase {
 
     public static final User USER_WITH_FIRST_ID = User.builder()

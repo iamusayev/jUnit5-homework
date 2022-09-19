@@ -20,7 +20,6 @@ class UserDaoIT extends IntegrationTestBase {
 
     private final UserDao userDao = UserDao.getInstance();
 
-
     @Test
     void getAllIsNotEmptyIfUsersExist() {
         List<User> users = userDao.findAll();

@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 class UserMapperIT {
 
     private UserMapper userMapper = UserMapper.getInstance();
-
     @Test
     void mapUserEntityToDtoTest() {
         User userEntity = USER_WITH_FIRST_ID;

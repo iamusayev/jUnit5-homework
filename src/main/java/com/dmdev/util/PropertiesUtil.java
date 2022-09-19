@@ -26,3 +26,4 @@ public final class PropertiesUtil {
         return properties.getProperty(key);
     }
 }
+

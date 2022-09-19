@@ -21,6 +21,7 @@ import lombok.SneakyThrows;
 @NoArgsConstructor(access = PRIVATE)
 public class UserDao implements Dao<Integer, User> {
 
+
     private static final UserDao INSTANCE = new UserDao();
 
     private static final String GET_ALL_SQL = "SELECT    id,name,birthday,email,password,role,gender FROM users";

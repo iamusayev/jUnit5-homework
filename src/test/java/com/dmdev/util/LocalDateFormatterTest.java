@@ -30,6 +30,4 @@ public class LocalDateFormatterTest {
                 () -> assertThat(LocalDateFormatter.isValid(INCORRECT_DATE)).isFalse()
         );
     }
-
-
 }
