@@ -37,7 +37,6 @@ public class UserService {
                 .map(userMapper::map);
     }
 
-
     @SneakyThrows
     public UserDto create(CreateUserDto userDto) {
         ValidationResult validationResult = createUserValidator.validate(userDto);

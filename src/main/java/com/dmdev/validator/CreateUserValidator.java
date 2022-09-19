@@ -31,6 +31,4 @@ public class CreateUserValidator implements Validator<CreateUserDto> {
         }
         return validationResult;
     }
-
-
 }

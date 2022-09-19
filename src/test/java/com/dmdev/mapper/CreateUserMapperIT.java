@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 class CreateUserMapperIT {
 
     private final CreateUserMapper createUserMapper = CreateUserMapper.getInstance();
-
     @Test
     void mapCreateUserDtoToEntity() {
         CreateUserDto createUserDto = CreateUserDto.builder()

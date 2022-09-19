@@ -3,7 +3,6 @@ package com.dmdev.dto;
 import lombok.Builder;
 import lombok.Data;
 
-
 @Builder
 @Data
 public class CreateUserDto {

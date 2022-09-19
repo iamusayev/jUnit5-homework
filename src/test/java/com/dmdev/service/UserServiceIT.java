@@ -28,7 +28,6 @@ class UserServiceIT extends IntegrationTestBase {
     private final UserMapper userMapper = UserMapper.getInstance();
     private final UserService userService = new UserService();
 
-
     @Test
     void loginSuccessIfUserExist() {
         Optional<User> maybeUser = userDao.findByEmailAndPassword(USER_WITH_FIRST_ID.getEmail(), USER_WITH_FIRST_ID.getPassword());

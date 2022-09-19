@@ -10,7 +10,6 @@ import static lombok.AccessLevel.PRIVATE;
 public class UserMapper implements Mapper<User, UserDto> {
 
     private static final UserMapper INSTANCE = new UserMapper();
-
     public static UserMapper getInstance() {
         return INSTANCE;
     }

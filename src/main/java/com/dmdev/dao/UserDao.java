@@ -139,3 +139,4 @@ public class UserDao implements Dao<Integer, User> {
         preparedStatement.setObject(6, entity.getGender() != null ? entity.getGender().name() : null);
     }
 }
+
