@@ -20,7 +20,6 @@ class UserDaoIT extends IntegrationTestBase {
 
     private final UserDao userDao = UserDao.getInstance();
 
-
     @Test
     void getAllIsNotEmptyIfUsersExist() {
         List<User> users = userDao.findAll();
@@ -39,7 +38,6 @@ class UserDaoIT extends IntegrationTestBase {
         assertThat(maybeUser).isEmpty();
     }
 
-
     @ParameterizedTest
     @MethodSource("getParametersForEmailAndPassword")
     void getByEmailAndPasswordTest(String email, String password, Optional<User> user) {
@@ -56,7 +54,7 @@ class UserDaoIT extends IntegrationTestBase {
                 Arguments.of(null, "111", Optional.empty()),
                 Arguments.of(null, null, Optional.empty()));
     }
-
+    
     @Test
     void saveTest() {
         User user = User.builder()
@@ -72,7 +70,7 @@ class UserDaoIT extends IntegrationTestBase {
 
         assertThat(save.getId()).isNotNull();
     }
-
+    
     @Test
     void deleteIfUserExist() {
         boolean deleteResult = userDao.delete(1);
@@ -89,7 +87,6 @@ class UserDaoIT extends IntegrationTestBase {
         boolean deleteResult = userDao.delete(Integer.MAX_VALUE);
         assertThat(deleteResult).isFalse();
     }
-
 
     @Test
     void updateTest() {
@@ -114,7 +111,4 @@ class UserDaoIT extends IntegrationTestBase {
                 () -> updatedUser.ifPresent(user -> assertThat(user.getEmail()).isNotEqualTo(USER_WITH_FIRST_ID.getEmail()))
         );
     }
-
-//    @Test
-//    void updateTestIf
 }
