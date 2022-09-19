@@ -22,6 +22,7 @@ import org.junit.jupiter.api.Test;
 
 class UserServiceIT extends IntegrationTestBase {
 
+
     private final CreateUserValidator createUserValidator = CreateUserValidator.getInstance();
     private final UserDao userDao = UserDao.getInstance();
     private final CreateUserMapper createUserMapper = CreateUserMapper.getInstance();

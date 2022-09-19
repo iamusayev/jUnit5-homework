@@ -14,7 +14,6 @@ public final class PropertiesUtil {
     static {
         loadProperties();
     }
-
     @SneakyThrows
     private static void loadProperties() {
         try (InputStream inputStream = PropertiesUtil.class.getClassLoader().getResourceAsStream("application.properties")) {

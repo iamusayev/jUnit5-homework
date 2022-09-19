@@ -16,7 +16,6 @@ public class LocalDateFormatter {
     public LocalDate format(String date) {
         return LocalDate.parse(date, FORMATTER);
     }
-
     public boolean isValid(String date) {
         try {
             return Optional.ofNullable(date)

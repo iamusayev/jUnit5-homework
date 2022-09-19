@@ -22,6 +22,7 @@ public abstract class IntegrationTestBase {
             .gender(Gender.MALE)
             .build();
 
+
     private static final String CLEAN_SQL = "DROP TABLE IF EXISTS users;";
     private static final String CREATE_SQL =
             "CREATE TABLE IF NOT EXISTS users(id INT AUTO_INCREMENT PRIMARY KEY , name VARCHAR(64),birthday DATE NOT NULL ,email VARCHAR(64) NOT NULL UNIQUE ,password VARCHAR(64) NOT NULL ,role VARCHAR(32)  ,gender VARCHAR(16))";

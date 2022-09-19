@@ -17,7 +17,6 @@ public class ConnectionManager {
     static {
         loadDriver();
     }
-
     @SneakyThrows
     private static void loadDriver() {
         Class.forName(PropertiesUtil.get(DRIVER_KEY));
